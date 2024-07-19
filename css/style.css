@@ -1,0 +1,35 @@
+figure {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+}
+
+#cabeca {
+    position: absolute;
+    transform: translate(-50%, 0%);
+}
+
+#tronco {
+    position: absolute;
+    transform: translate(-50%, 60%);
+}
+
+#bra-dir {
+    position: absolute;
+    transform: translate(90%, 60%);
+}
+
+#bra-esq {
+    position: absolute;
+    transform: translate(-190%, 60%);
+}
+
+#per-dir {
+    position: absolute;
+    transform: translate(0%, 140%);
+}
+
+#per-esq {
+    position: absolute;
+    transform: translate(-100%, 140%);
+}
