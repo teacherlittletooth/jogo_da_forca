@@ -1,4 +1,6 @@
 const letra = document.getElementById("letra")
+const jogar = document.getElementById("jogar")
+const conteudo = document.getElementById("conteudo")
 const enviar = document.getElementById("enviar")
 const lista = document.getElementById("lista")
 const palavra = document.getElementById("palavra")
@@ -112,3 +114,13 @@ function perdeu() {
 }
 
 enviar.addEventListener("click", pegaLetra)
+
+letra.addEventListener("input", function(){
+    enviar.focus()
+})
+
+function iniciar() {
+    conteudo.style.display = "block"
+    jogar.style.display = "none"
+    letra.focus()
+}

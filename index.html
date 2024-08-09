@@ -4,20 +4,32 @@
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Jogo da forca</title>
 </head>
 <body>
     
-    <input type="text" id="letra" maxlength="1" size="1">
-    <button id="enviar"> Enviar </button>
-    <span id="lista"> Envie uma letra para começar. </span>
+    <main>
+        <div id="inicio">
+            <h1>JOGO DA FORCA</h1>
+            <button id="jogar" onclick="iniciar()">Jogar!</button>
+        </div>
+        
+        <div id="conteudo">
+            <input type="text" id="letra" maxlength="1" size="1">
+            <button id="enviar"> Enviar </button>
+            <span id="lista"> Envie uma letra para começar. </span>
 
-    <hr>
-    <h1 id="palavra"> </h1>
-    <h1 id="placar"> </h1>
+            <hr>
+            <h1 id="palavra"> </h1>
+            <h1 id="placar"> </h1>
 
-    <img src="img/6.png" alt="boneco" id="boneco">
-    
+            <img src="img/6.png" alt="boneco" id="boneco">
+        </div>
+    </main>
+
     <script src="js/script.js"></script>
 </body>
 </html>
